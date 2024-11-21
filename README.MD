@@ -23,20 +23,29 @@ This project is a web scraper built using Python, BeautifulSoup, and the request
 To set up and run this project, you'll need to have Python installed. Follow the instructions below to get started:
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com//Eugene600/Lux_Project_for_House_prediction.git
    ```
 
 2. Install the required dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
 
    The `requirements.txt` file should contain:
+
    ```
-   requests
-   beautifulsoup4
-   lxml
+   beautifulsoup4==4.12.3
+   bs4==0.0.2
+   certifi==2024.7.4
+   charset-normalizer==3.3.2
+   idna==3.7
+   lxml==5.2.2
+   requests==2.32.3
+   soupsieve==2.5
+   urllib3==2.2.2
    ```
 
 ## How It Works
@@ -74,10 +83,10 @@ This will start scraping the property listings and save the results to `scraped_
 
 The output CSV file will contain rows like:
 
-| Location      | Other Location Details | Size   | Bedrooms | Bathrooms | Price  | Property Type | Purchase Type |
-|---------------|------------------------|--------|----------|-----------|--------|---------------|---------------|
-| Westlands     | Nairobi                 | 250 sqm| 3        | 2         | 100000 | Apartment     | Rent          |
-| Lavington     | Nairobi                 | 400 sqm| 4        | 3         | 250000 | House         | Sale          |
+| Location  | Other Location Details | Size    | Bedrooms | Bathrooms | Price  | Property Type | Purchase Type |
+| --------- | ---------------------- | ------- | -------- | --------- | ------ | ------------- | ------------- |
+| Westlands | Nairobi                | 250 sqm | 3        | 2         | 100000 | Apartment     | Rent          |
+| Lavington | Nairobi                | 400 sqm | 4        | 3         | 250000 | House         | Sale          |
 
 ## Error Handling
 
